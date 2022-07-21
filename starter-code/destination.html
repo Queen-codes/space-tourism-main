@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+  rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Destination | Space tourism website</title>
+</head>
+<body class="destination-home">
+
+    <header class="header flex">
+      <a href="/index.html">
+        <img src="../assets/shared/logo.svg" alt="Space Tourism's logo">
+      </a>
+  
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"> </button>
+        
+      <div class="border"></div>
+      
+      <nav class="nav" role="navigation">
+        <ul class="nav-menu flex underline">
+          <li>
+            <a href="/index.html"> <span class="number">00</span> Home </a>
+          </li>
+  
+          <li class="active">
+            <a href="./destination.html"> <span class="number">01</span> Destination</a>
+          </li>
+  
+          <li>
+            <a href="./crew.html"> <span class="number">02</span> Crew</a>
+          </li>
+  
+          <li>
+            <a href="./technology.html"> <span class="number">03</span> Technology</a>
+          </li>
+  
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="text-ffam text-white destination-title"> <span class="numbered-title">01</span> 
+      Pick your destination
+    </h1>
+
+    <!--whole conatiner begins-->
+    <main class="destination-article main-article">
+        <!--grid -one-->
+        <div class="destination-img page-img">
+          <img src="../assets/destination/image-moon.webp" alt="" class="moon active" id="moon-image">
+          <img src="../assets/destination/image-mars.webp" alt="" class="mars" id="mars-image" > 
+          <img src="../assets/destination/image-europa.webp" alt="" class="europaa" id="europa-image">
+          <img src="../assets/destination/image-titan.webp" alt="" class="titans" id="titan-image">
+       </div>
+      
+        <!--grid two-->
+      <article class="description">
+      <!--tab begins-->
+      <div class="tabbed-buttons underline">
+        <button class="tab-btn btn active" data-id="moon" role="tab" data-control="moon-image">Moon</button>
+        <button class="tab-btn btn" data-id="mars" role="tab" data-control="mars-image">Mars</button>
+        <button class="tab-btn btn" data-id="europa" role="tab" data-control="europa-image">Europa</button>
+        <button class="tab-btn btn" data-id="titan" role="tab" data-control="titan-image">Titan</button>
+      </div>
+      <!--tab ends-->
+      
+      <!--content starts-->
+      <article class="destination-content">
+      <!--about individual planets(moon)-->
+      <div id="moon" class="content active">
+        <h2 class="text-belfair">Moon</h2>
+        <p class="text-bluish">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+        <div class="borderr"></div>
+
+        <div class="destination-journey">
+          <div class="distance flex">
+            <span class="text-bluish text-barlow">Avg.distance</span>
+            <span class="journey-text">384,400 km</span>
+          </div>
+
+          <div class="time flex">
+            <span class="text-bluish text-barlow">Est.travel time</span>
+            <span class="journey-text">3 days</span>
+          </div>
+        </div>
+        <!--journey ends-->
+     
+      </div>
+
+      <!--about individual planets(moon) ends-->
+      
+      <!--about individual planets(mars)-->
+        <div id="mars" class="content">
+          <h2 class="text-belfair">Mars</h2>
+          <p class="text-bluish">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+          <div class="borderr"></div>
+          <div class="destination-journey">
+            <div class="distance flex">
+              <span class="text-bluish text-barlow">Avg.distance</span>
+              <span class="journey-text">225 MIL. km</span>
+            </div>
+  
+            <div class="time flex">
+              <span class="text-bluish text-barlow">Est.travel time</span>
+              <span class="journey-text">9 months</span>
+            </div>
+          </div>
+          <!--journey ends-->
+       
+        </div>
+   <!--about individual planets(mars) ends-->
+  
+   <!--about individual planets(europa)-->
+   <div id="europa" class="content">
+    <h2 class="text-belfair">Europa</h2>
+    <p class="text-bluish">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+
+    <div class="borderr"></div>
+    <div class="destination-journey">
+      <div class="distance flex">
+        <span class="text-bluish text-barlow">Avg.distance</span>
+        <span class="journey-text">628 MIL. km</span>
+      </div>
+
+      <div class="time flex">
+        <span class="text-bluish text-barlow">Est.travel time</span>
+        <span class="journey-text">3 years</span>
+      </div>
+    </div>
+    <!--journey ends-->
+ 
+  </div>
+<!--about individual planets(titan) ends-->
+
+<div id="titan" class="content">
+  <h2 class="text-belfair">Titan</h2>
+  <p class="text-bluish">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+  <div class="borderr"></div>
+  <div class="destination-journey">
+    <div class="distance flex">
+      <span class="text-bluish text-barlow">Avg.distance</span>
+      <span class="journey-text">1.7 BIL. km</span>
+    </div>
+
+    <div class="time flex">
+      <span class="text-bluish text-barlow"> Est.travel time</span>
+      <span class="journey-text">9 years</span>
+    </div>
+  </div>
+  <!--journey ends-->
+
+</div>
+<!--about individual planets(titan) ends-->
+
+
+      </article>  
+        <!--content ends-->
+      
+      </article>
+      <!--end of grid-two-->
+    </main>
+   <!--whole-container ends-->
+    
+  <script src="../js/app.js"></script>
+  <script src="../js/tabs.js"></script>
+</body>
+</html>

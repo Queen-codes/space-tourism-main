@@ -1,0 +1,206 @@
+
+.destination-home {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.destination-title, 
+.crew-title, 
+.technology-title {
+    color: $bg-white;
+    font-size: $fs-16;
+    font-weight: $ffs-400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.3rem;
+    text-align: center;
+}
+
+.numbered-title {
+    opacity: 0.25;
+    font-weight: $ffs-700;
+}
+
+.destination-img img {
+    max-width: 70%;
+    display: none;
+    margin: auto;
+}
+
+.destination-img img.active {
+    display: block;
+} 
+
+.tabbed-buttons button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: $bg-purplishBlue;
+}
+
+.distance, 
+.time {
+    flex-direction: column;
+    gap: .3rem;
+    padding-bottom: 1.2rem;
+}
+
+.description {
+    text-align: center;
+    margin-top: 2rem;
+}
+.destination-journey {
+    margin-top: 1.6rem;
+}
+.destination-content p , 
+.crew-content p, 
+.technology-content p{
+    padding: 1rem 0.9rem;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.destination-content h2 {
+    font-weight: $ffs-400;
+    font-size: $fs-56;
+    text-transform: uppercase;
+   margin-top: 1rem;
+}
+
+.tabbed-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+    cursor: pointer;
+    gap: 2rem;
+}
+
+.tab-btn {
+    text-transform: uppercase;
+    color: $bg-purplishBlue;
+    font-weight: 400;
+    font-size: 0.85rem;
+    font-family: $ff-condensedBarlow;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    color: $bg-white;
+}
+
+.content, .contentt {
+    display: none;
+}
+
+.content.active, .contentt.active {
+    display: block;
+}
+
+.borderr {
+    position: absolute;
+    border: 1px solid  hsla(231, 15%, 26%, 1);
+    width: 80vw;
+    left: 10% ;
+    margin-top: .6rem;
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 721px) {
+
+
+    .destination-title, 
+    .crew-title ,
+    .technology-title{
+        text-align: left;
+        margin-left: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .tabbed-buttons {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .tabbed-buttons button {
+        font-size: 1.3rem;
+    }
+    .destination-content p , 
+    .crew-content p, 
+    .technology-content p{
+        font-size: 1.2rem;
+        max-width: 500px;
+        margin: auto;
+    }
+    .description {
+        margin-top: 3rem;
+    }
+
+    .destination-journey {
+        display: flex;
+        gap: 5.6rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .destination-article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+    }
+
+    .description {
+        text-align: start;
+        margin-top: 0;
+    }
+
+    .destination-journey {
+        justify-content: start;
+        margin-left: 1rem;
+    }
+
+    .destination-img {
+        transform: translateY(15%);
+    
+        &img {
+            width: 65%;
+        }
+    }   
+    .destination-home {
+        background-image: url(../assets/destination/background-destination-desktop.jpg);
+    }
+    
+    .destination-content h2 {
+        margin-left: .28rem;
+    } 
+
+    .tabbed-buttons {
+        margin-left: -.4rem;
+    }
+
+    .borderr {
+        left: 51%;
+        width: 38vw;
+    }
+
+    .destination-content p {
+        max-width: 500px;
+        margin-left: -0.3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .destination-home {
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: 1500px) {
+    .destination-content p {
+        margin-left: -.6rem;
+    }
+}
